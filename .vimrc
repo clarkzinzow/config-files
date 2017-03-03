@@ -12,14 +12,18 @@ set nocompatible
 " set termguicolors
 " use intelligent indentation for C
 set smartindent
-set tabstop=2 shiftwidth=2
 set expandtab
+autocmd Filetype * setlocal ts=4 sw=4 
+autocmd Filetype h setlocal ts=2 sw=2
+autocmd Filetype c setlocal ts=2 sw=2
+autocmd Filetype cpp setlocal ts=2 sw=2
+" autocmd Filetype python setlocal ts=4 sw=4
+autocmd Filetype javascript setlocal sts=0 noexpandtab
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-" wrap lines at 120 chars. 80 is somewaht antiquated with modern displays.
-set textwidth=100
+set textwidth=80
 set number
 set mouse=a
 
@@ -56,6 +60,7 @@ Plug 'aperezdc/vim-template'
 Plug 'suan/vim-instant-markdown', {'rtp': 'after'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'lervag/vimtex'
+Plug 'nvie/vim-flake8'
 call plug#end()
 
 set t_Co=256
