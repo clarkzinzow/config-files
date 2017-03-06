@@ -1,5 +1,5 @@
 " VIM Configuration File
-" Description:  Primarily optimized for C/C++ development and my personal preferences.
+" Description:  Optimized for Python development, C/C++ development, and my personal preferences.
 " Author:  Clark Zinzow
 " Acknowledgements:  Gerhard Gappmeier, 
 
@@ -17,7 +17,6 @@ autocmd Filetype * setlocal ts=4 sw=4
 autocmd Filetype h setlocal ts=2 sw=2
 autocmd Filetype c setlocal ts=2 sw=2
 autocmd Filetype cpp setlocal ts=2 sw=2
-" autocmd Filetype python setlocal ts=4 sw=4
 autocmd Filetype javascript setlocal sts=0 noexpandtab
 set hlsearch
 set incsearch
@@ -35,11 +34,6 @@ endif
 
 inoremap jk <ESC>
 :vmap // :s:^://<CR>
-" nnoremap <c-j> <c-w>j
-" nnoremap <c-k> <c-w>k
-" nnoremap <c-h> <c-w>h
-" nnoremap <c-l> <c-w>l
-
 
 filetype plugin on
 
