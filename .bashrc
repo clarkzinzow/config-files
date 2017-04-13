@@ -128,3 +128,5 @@ PERL_MM_OPT="INSTALL_BASE=/home/clark/perl5"; export PERL_MM_OPT;
 eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
 alias python=python3
+
+IGNOREEOF=20

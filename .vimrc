@@ -53,8 +53,9 @@ Plug 'aperezdc/vim-template'
 " Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'suan/vim-instant-markdown', {'rtp': 'after'}
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'lervag/vimtex'
 Plug 'nvie/vim-flake8'
+Plug 'lervag/vimtex'
+" Plug 'xuhdev/vim-latex-live-preview'
 call plug#end()
 
 set t_Co=256
